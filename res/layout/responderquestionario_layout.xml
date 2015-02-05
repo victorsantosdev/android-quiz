@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout_responderQuestionario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <!-- area de registro do usuario -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#dcdcdc"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/username_sessionData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="30dip"
+                android:text="Username_session"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/img_logout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.15"
+                android:onClick="logout"
+                android:src="@drawable/ic_action_export" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/sv_questionario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1.01" >
+
+        <LinearLayout
+            android:id="@+id/ll_questionario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- botão cadastrar o número de perguntas e fotinho -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tabela_questionario1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btn_cadastrarQnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:onClick="btn_enviaQuestionario"
+                android:text="Concluir questionário" />
+
+            <ImageView
+                android:id="@+id/foto_cadastrarQnt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:src="@drawable/ic_action_save" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuestionarioAndroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+     <string name="tiporesposta_prompt">Qual o tipo de resposta desta pergunta?</string>
+ 
+    <string-array name="tiporesposta_array">
+        <item>Texto</item>
+        <item>Sim/Não</item>
+    </string-array>
+    
+    <string-array name="resposta_simnao">
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+    
+</resources>
